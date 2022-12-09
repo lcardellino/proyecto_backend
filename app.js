@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/api", indexRouter);
+app.use("/pokeapi", indexRouter);
 app.use("/incubadora", incubadoraRouter);
 //app.use("/pokeapi", pokeapiRouter);
 
